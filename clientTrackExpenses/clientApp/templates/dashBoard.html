@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+<h3>{{ request.user.username }} : Create your expense</h3>
+<p> {% if msg %}</p>
+<p> {{ msg }}</p>
+<p> {% endif %} </p>
+<form action="" method="post" novalidate> {% csrf_token %}
+
+    {{ form | crispy }}
+
+    <input type="submit" class="btn btn-success btn-sm" value="CREATE">
+
+</form>
+
+<h2><a href="/read"> click here to check your expenses dear {{ request.user.username }}</a></h2>
+
+{% endblock %}
+
+
+
+<h3>Welcome: {{ request.user.username }}</h3>
