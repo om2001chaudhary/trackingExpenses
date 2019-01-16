@@ -1,5 +1,4 @@
 # Writing exercise
-this application for tracking client expenses
-let's see  
+Hello readers,
 
-why this is heppining
+In this article 
